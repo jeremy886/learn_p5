@@ -1,0 +1,20 @@
+# Examples for Session 2
+
+1. Newton's Laws of Motion 00:05:09
+1. Adding Forces 00:04:42
+    * forces.py
+1. Force Accumulation 00:06:50
+    * bounce_back.py
+    * wind.py
+    * wind_mouse.py
+1. Adding Mass 00:14:09
+    * mass.py
+1. Gravitational Attraction 00:13:40
+    * orbit.py
+1. Friction 00:12:10
+    * friction.py
+1. Arrays of Particles 00:13:27
+    * particles_wind_mouse.py
+    * particles_wind_random.py
+1. Assignment 00:01:49
+
