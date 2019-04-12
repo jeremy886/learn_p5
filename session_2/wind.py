@@ -20,7 +20,7 @@ class Particle:
     def apply_force(self, force):
         self.acc += force
 
-    def edges(self):
+    def check_edges(self):
         if self.pos.y > height:
             self.vel.y *= -1
             self.pos.y = height
@@ -41,7 +41,7 @@ def setup():
 def draw():
     background(51)
 
-    particle.edges()
+    particle.check_edges()
     particle.update()
     particle.display()
 

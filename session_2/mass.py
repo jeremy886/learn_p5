@@ -24,7 +24,7 @@ class Particle:
     def apply_force(self, gravity):
         self.acc += gravity / self.mass
 
-    def edges(self):
+    def check_edges(self):
         if self.pos.y > height:
             self.vel.y *= -1
             self.pos.y = height
@@ -55,8 +55,8 @@ def draw():
 
     particle1.update()
     particle2.update()
-    particle1.edges()
-    particle2.edges()
+    particle1.check_edges()
+    particle2.check_edges()
     particle1.display()
     particle2.display()
 
@@ -64,5 +64,7 @@ def draw():
 if __name__ == '__main__':
     run()
 
-    # In Clip 5 of Session 5, the lecturer discovered p5js couldn't keep two balls falling in sync because
-    # the velos have a very tiny difference and he provided no solution. You don't observe this issue in p5py.
+"""
+Clip 5 of Session 5, the lecturer discovered p5js couldn't keep two balls falling in sync because
+the velos have a very tiny difference and he provided no solution. You don't observe this issue in p5py.
+"""

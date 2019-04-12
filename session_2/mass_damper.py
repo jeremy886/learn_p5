@@ -24,7 +24,7 @@ class Particle:
     def apply_force(self, gravity):
         self.acc += gravity / self.mass
 
-    def edges(self):
+    def check_edges(self):
         if self.pos.y > height:
             self.vel.y *= -0.9  # damper
             self.pos.y = height
@@ -50,8 +50,8 @@ def draw():
         particle1.apply_force(wind)
         particle2.apply_force(wind)
 
-    particle1.edges()
-    particle2.edges()
+    particle1.check_edges()
+    particle2.check_edges()
     particle1.update()
     particle2.update()
     particle1.display()

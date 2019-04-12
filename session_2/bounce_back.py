@@ -21,7 +21,7 @@ class Particle:
     def apply_force(self, gravity):
         self.acc += gravity
 
-    def edges(self):
+    def check_edges(self):
         if self.pos.y > height:
             self.vel.y *= -1
             self.pos.y = height
@@ -36,7 +36,7 @@ def draw():
 
     gravity = Vector(0, 0.1)
     particle.apply_force(gravity)
-    particle.edges()
+    particle.check_edges()
     particle.update()
     particle.display()
 

@@ -1,3 +1,6 @@
+"""
+https://www.khanacademy.org/computing/computer-programming/programming-natural-simulations/programming-noise/a/perlin-noise
+"""
 from p5 import *
 
 
