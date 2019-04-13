@@ -82,6 +82,7 @@ class Vehicle:
         self.vel.limit(self.max_speed)
         self.pos += self.vel
         self.acc = Vector(0, 0)
+        # self.acc.magnitude = 0.  # with an error, why?
 
     def check_borders(self):
         if self.pos.x < -self.size:
@@ -118,7 +119,7 @@ def setup():
     global debug, flowfield, vehicles, width, height
     debug = True
     flowfield = FlowField(20)
-    vehicles = [Vehicle(randrange(width), randrange(height), random_uniform(5, 10), random_uniform(0.3, 0.6))
+    vehicles = [Vehicle(randrange(width), randrange(height), random_uniform(5, 20), random_uniform(0.3, 0.6))
                 for _ in range(120)]
 
 

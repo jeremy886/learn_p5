@@ -1,4 +1,4 @@
-for Session 3
+Session 3: Steering Behaviours
 ########################################
 
 #. Steering Behaviors - Introduction 00:01:59
@@ -12,7 +12,9 @@ for Session 3
     * draw_vehichle.py - practice drawing vehicles
     * arrive.py
 #. Flow Field 00:07:55
+    * flow_field.py - slow
 #. Group Behavior: Separation 00:07:46
+    * separation.py - slow
 #. Combining Behaviors: Seek and Separate 00:07:26
 #. Complex Systems: Flocking 00:11:00
 
